@@ -15,6 +15,7 @@
 
 body {
     background-color: #F5F5F5;
+    
 }
 
 /* #4 # sweat #uppercase buttons and w3w locations */
@@ -142,4 +143,128 @@ li img {
 .message.own {
     margin-left: 17.5%;
 }
+
+/*NEW CODE*/
+/*Channels configuration*/
+#channels{
+    height:100%;
+    position: absolute;
+    width: 40%;
+    top: 0;
+    bottom: 0;
+    background-color: white; 
+
+}
+/*app-bar configuration*/
+h1{
+    font-size: 20px;
+    height: 10%;
+    position: relative;
+    top: 0;
+}
+/*specific to channels bar*/
+#channels h1{
+    display: flex;
+}
+/*centering the content of channel app-bar vertically*/
+#channels h1 span{
+    line-height: 60px;
+    position: relative;
+    left: 80px;
+
+}
+/*channels design*/
+#channels ul{
+    position: relative;
+    height: 75%;
+    overflow: auto;
+}
+.channel-meta{
+    position: absolute;
+    right: 3%;
+}
+/*buttons desing*/
+#tab-bar {
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+}
+#tab-bar button {
+    position: relative;
+    bottom: -15px;
+}
+#chat{
+    height: 100%;
+    position: absolute;
+    width: 60%;
+    left: 40%;
+    top: 0;
+}
+#chat img{
+    vertical-align: middle;
+    position: relative;
+    left: 45%;
+    
+
+}
+.messages{
+    height: 80%;
+    overflow: auto;
+}
+#chat h1{
+    line-height: 60px;
+}
+#chat h1 span{
+    margin: 16px;
+}
+.message p  {
+    position: relative;
+}
+.message p  button{
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+
+}
+.message h3{
+    display: flex;
+    justify-content: space-between;
+}
+
+#chat-bar{
+    background-color: white;
+    height: 3%;
+    width: 98.5%;
+    text-align: center;
+    display: flex;
+    justify-content:flex-start;
+    padding: 5px;
+    position: relative;
+    bottom: -25px;
+}
+#emojis-button{
+    position: relative;
+    left: 0px;
+
+}
+#emojis{
+    background-color:white;
+    border: solid 1px black;
+    overflow: auto; 
+    text-align: left;
+    font-size: 28px;
+    position: absolute;
+    bottom: 30px;
+    left:  -10px;
+    height:250px ;
+    width:250px ;
+    margin-left: 16px;
+    margin-top: 284px;
+    padding: 16px 16px 16px 16px;
+}
+#chat-bar button{
+    background-color: white;
+    border: none;
+}
+
 
