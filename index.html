@@ -9,7 +9,9 @@
 
     <!-- #4 #sweat out the styles by creating an #external css -->
     <link rel="stylesheet" href="css/style.css" />
-
+   
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -23,7 +25,7 @@
 
     <!-- #3 #channels #list is much better, than headlines or paragraphs... -->
     <ul>
-        <li>#Yummy
+        <li onclick="switchChannel('#Yummy')">#Yummy
             <!-- #3 #channels #favorite this is not starred -->
             <span class="channel-meta" >
                 <img  src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
@@ -34,23 +36,25 @@
         </li>
 
         <!-- #4 #channel is #highlighted -->
-        <li class="selected">
+        <li class="selected" onclick="switchChannel('#SevenContinents')" >
             #SevenContinents
             <!-- #3 #channels #favorite this is starred -->
             <span class="channel-meta" >
                 <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred">
-                <img  src=" http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="error finding image">
+                <img onclick="switchChannel('#SevenContinents')"  src=" http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="error finding image">
             </span>
         
         </li>
-        <li>#KillerApp
+        <li onclick="switchChannel('#KillerApp')">
+            #KillerApp
             <!-- #3 #channels #favorite this is not starred -->
             <span class="channel-meta" >
             <img   src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
             <img  src=" http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="error finding image">
             </span>
         </li>
-        <li>#FirstPersonOnMars
+        <li onclick="switchChannel('#FirstPersonOnMars')">
+            #FirstPersonOnMars
             <!-- #3 #channels #favorite this is starred -->
             <span class="channel-meta" >
                 
@@ -58,7 +62,8 @@
             <img src=" http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="error finding image">
             </span>
         </li>
-        <li>#Octoberfest
+        <li onclick="switchChannel('#Octoberfest')">
+            #Octoberfest
             <!-- #3 #channels #favorite this is not starred -->
             <span class="channel-meta" >
                 
@@ -67,14 +72,6 @@
             </span>
         </li>
 
-        <li>#Yummy
-            <!-- #3 #channels #favorite this is not starred -->
-            <span class="channel-meta" >
-                <img  src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
-                <img  src=" http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="error finding image">
-            </span>
-
-        </li>
 
     </ul>
 
@@ -102,12 +99,13 @@
 
 <!-- #4 #one #page -->
 <div id="chat">
-    <h1><span>
-            #SevenContinents
+    <h1>
+            <span id="chatName">#SevenContinents</span>
+            <span id="chatMetaData">
             <small>by
                 <strong>cheeses.yard.applies</strong>
             </small>
-            <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred">
+            <img id="chatStar" src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred">
     </span>
 
     </h1>
